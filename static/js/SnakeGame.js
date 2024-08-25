@@ -18,10 +18,23 @@ let fdarr={x:10,y:10};
 //functions
 function main(ctime){
   window.requestAnimationFrame(main);
+  // sel.addEventListener('click',()=>{
+    // for( let key in select){
+    //   if(key.innerHTML=='Low'){
+    //     speed=1;
+    //   }
+    //   if(key.innerHTML=='Medium'){
+    //     speed=3;
+    //   }
+    //   if(key.innerHTML=='High'){
+    //     speed=6;
+    //   }
+    // }
     if(((ctime-lastpainttime)/1000) < 1/speed){ 
       return;
     }
     lastpainttime=ctime;
+  // });
   GameEngine();
 }
 

@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .body{
+    background: url('Snake.jpg');
+    min-height: 100vh;
+    background-size: 120vw 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5.5vw;
+  }
+  .scor{
+    font-size: large;
+    font-weight: 800;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 10px  rgb(255, 0, 128);
+  }
+  select,button:hover{
+    cursor: pointer;
+  }
+  .show select, button {
+    height: 5vh;
+    width: 15vw;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: large;
+    font-weight: 800;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 15px  rgb(255, 0, 128);
+    background: linear-gradient(skyblue, hotpink);
+  }
+  .board{
+    background: linear-gradient(rgb(154, 235, 84),rgb(207, 247, 142)) ;
+    height: 80vmin;
+    width: 90vmin;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+  }
+  .food{
+    background: linear-gradient(purple,red);
+    border-radius: 5px;
+  }
+  .snake{
+    background-color: purple;
+    border-radius: 30px;
+  }
+  .head{
+    background-color:rgb(243, 36, 36);
+    border-radius: 5px;
+  }
+  .show{
+    display: flex;
+  }

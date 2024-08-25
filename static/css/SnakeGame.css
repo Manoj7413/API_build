@@ -3,7 +3,7 @@
     padding: 0;
   }
   .body{
-    background: url('Snake.jpg');
+    background: url('Photos/Snake.jpg');
     min-height: 100vh;
     background-size: 120vw 120vh;
     display: flex;

@@ -3,7 +3,7 @@
     padding: 0;
   }
   .body{
-    background: url('Photos/Snake.jpg');
+    background: url('/static/Photos/Snake.jpg');
     min-height: 100vh;
     background-size: 120vw 120vh;
     display: flex;
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:5.5vw;
+    gap:10vw;
   }
   .scor{
     font-size: large;
@@ -27,19 +27,20 @@
     cursor: pointer;
   }
   .show select, button {
-    height: 5vh;
-    width: 15vw;
+    padding: 10px;
+    min-width: 20vmin;
+    min-height: 5vh;
     border: none;
     border-radius: 5px;
     margin: 10px;
     font-size: large;
     font-weight: 800;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 0 0 15px  rgb(255, 0, 128);
     background: linear-gradient(skyblue, hotpink);
   }
   .board{
     background: linear-gradient(rgb(154, 235, 84),rgb(207, 247, 142)) ;
+    opacity: 0.7;
     height: 80vmin;
     width: 90vmin;
     border-radius: 15px;

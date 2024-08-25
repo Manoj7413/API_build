@@ -4,12 +4,12 @@ let sel=document.querySelector('.sel');
 let start=document.querySelector('.Start');
 let scor=document.querySelector('.scor');
 let inpdir={x:0,y:0};
-const movesound=new Audio('move.mp3');
-const eatsound=new Audio('food.mp3');
-const backsound=new Audio('music.mp3');
-const Gmoversound=new Audio('gameover.mp3');
+const movesound=new Audio('/static/Music/move.mp3');
+const eatsound=new Audio('/static/Music/food.mp3');
+const backsound=new Audio('/static/Music/music.mp3');
+const Gmoversound=new Audio('/static/Music/gameover.mp3');
 let lastpainttime=0;
-let speed=5;
+let speed=10;
 let score=0;
 scor.innerHTML=0;
 let Inarr=[{x:5,y:5}];
@@ -18,23 +18,10 @@ let fdarr={x:10,y:10};
 //functions
 function main(ctime){
   window.requestAnimationFrame(main);
-  // sel.addEventListener('click',()=>{
-    // for( let key in select){
-    //   if(key.innerHTML=='Low'){
-    //     speed=1;
-    //   }
-    //   if(key.innerHTML=='Medium'){
-    //     speed=3;
-    //   }
-    //   if(key.innerHTML=='High'){
-    //     speed=6;
-    //   }
-    // }
     if(((ctime-lastpainttime)/1000) < 1/speed){ 
       return;
     }
     lastpainttime=ctime;
-  // });
   GameEngine();
 }
 
